@@ -50,9 +50,13 @@ In `part-b/`, implement the three `TODO`s in `main.py`:
 **The mock courier** (`mock_courier.py`, port 8001) logs every request to `shipments.log`.
 **The Shopify write-back** (`shopify_api.py`) is a stub that logs to `status_writes.log` — in production it'd hit the Admin API.
 
-### Run it (three terminals)
+### Run it (three terminals, from the `part-b/` directory)
 
 ```bash
+# in every terminal, first activate the venv:
+cd part-b
+source ../.venv/bin/activate
+
 # terminal 1 — mock courier (port 8001)
 python3 mock_courier.py
 
